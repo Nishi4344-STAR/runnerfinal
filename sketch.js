@@ -84,7 +84,7 @@ function draw()
         {
             runner.velocityY = -43;
         }
-        if((keyDown("space")|| touches.length > 0 && runner.y >= 550) )
+        if((touches.length > 0 && runner.y >= 550) )
         {
             runner.velocityY = -30;
             console.log("jump");
