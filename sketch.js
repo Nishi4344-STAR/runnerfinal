@@ -65,7 +65,7 @@ function draw()
             //gameState = "lose";
             console.log("sneeze");
         }
-        if(keyDown("Q") || touches.length > 0 && sneezeGrp.isTouching(runner))
+        if(keyDown("Q")  && sneezeGrp.isTouching(runner))
         {
             for(var i =0; i<sneezeGrp.length; i++)
             {
@@ -84,7 +84,7 @@ function draw()
         {
             runner.velocityY = -43;
         }
-        if((keyDown("space") && runner.y >= 550) )
+        if((keyDown("space")|| touches.length > 0 && runner.y >= 550) )
         {
             runner.velocityY = -30;
             console.log("jump");
